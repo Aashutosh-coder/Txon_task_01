@@ -1,0 +1,146 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+    font-family: 'Poppins', sans-serif;}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    display: flex;
+    width: 100%;
+    height:100%;
+    /* background-color: red; */
+}
+
+#left{
+    position: relative;
+    width: 40%; 
+    height: 100%; 
+    background-color: white;
+}
+
+#right{
+    width: 60%;
+    height:100%;
+     background-color: yellow;
+}
+
+#rtop{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    background-color: brown;
+}
+
+#rbottom{
+    height: 50%;
+    width: 100%;
+    /* background-color: aqua; */
+    background-image: url(https://images.unsplash.com/photo-1605152276897-4f618f831968?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+    background-size: cover;
+    background-position: centre;
+}
+
+#rtopleft{
+      width: 55%;
+      height: 100%;
+      /* background-color: coral; */
+      background-image: url(https://images.unsplash.com/photo-1517330486404-33542d376afd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80);
+      background-size: cover;
+      background-position: centre;
+}
+
+#rtopright{
+    width: 45%;
+    height: 100%;
+    /* background-color: rgb(168, 168, 237); */
+    background-image: url(https://images.unsplash.com/photo-1661956600684-97d3a4320e45?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+    background-size: cover;
+    background-position: centre;
+
+}
+
+/* Coding the Navbar which lies in the left part of our page which is considered as lnav  */
+
+#lnav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 30px;
+}
+
+#llnav a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    color: #000;
+}
+/*Coding the right part if our navbar which consits of the links*/
+#rlnav{
+    display: flex;
+    align-items: center ;
+    /* justify-items: center; */
+}
+#rlnav i  { 
+    color: royalblue;
+}
+
+#rlnav a {
+     margin-right: 20px;
+     text-decoration: none;
+     font-size: 20px;
+     font-weight: 400;
+     color: #000;
+}
+
+#left #text-centre{
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+}
+
+#text-centre h1{
+    font-size: 80px;
+    font-weight: 1200;
+}
+
+#text-centre p{
+   line-height: 20px;
+   font-size: 15px;
+   opacity: .8;
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+
+#text-centre a{
+    font-size: large;
+    text-decoration: none;
+    color: #000;
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+    font-weight: 400;
+    opacity: .7;
+}
+
+@media(max-width:500px){
+    #main{
+        flex-direction: column;
+    }
+    #main #left {
+         width: 100%;
+    }
+    #main #text-centre {
+        padding-top: 130px;
+        padding-bottom:120px;
+    }
+   
+   #main #right{
+    width: 100%;
+   }
+}
